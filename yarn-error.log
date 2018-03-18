@@ -1,0 +1,52 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js install
+
+PATH: 
+  /anaconda3/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/anaconda2/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/ethanzh/google-cloud-sdk/bin:/anaconda3/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.10.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "main": "node_modules/expo/AppEntry.js",
+    "private": true,
+    "scripts": {
+      "test": "node ./node_modules/jest/bin/jest.js --watchAll"
+    },
+    "jest": {
+      "preset": "jest-expo"
+    },
+    "dependencies": {
+      "@expo/samples": "2.1.1",
+      "expo": "^25.0.0",
+      "react": "16.2.0",
+      "react-native": "https://github.com/expo/react-native/archive/sdk-25.0.0.tar.gz",
+      "react-native-pdf": "file:node_modules/react-native-pdf",
+      "react-navigation": "^1.0.0-beta.27"
+    },
+    "devDependencies": {
+      "jest-expo": "^25.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Package "react-native-pdf" refers to a non-existing file '"/Users/ethanzh/Desktop/gunn-app/node_modules/react-native-pdf"'.
+      at new MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
+      at FileResolver.<anonymous> (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:51140:15)
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:98:30)
+      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:109:13
+      at <anonymous>
