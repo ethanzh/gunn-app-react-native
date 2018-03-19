@@ -12,8 +12,7 @@ export default class HomeScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      text: '95043934',
-      hello: '',
+      text: '',
     };
   }
 
@@ -31,7 +30,17 @@ export default class HomeScreen extends React.Component {
               style={styles.input}
               value={this.state.text}
               onChangeText={(text) => {
-                  this.setState( {text} );
+
+                  if(this.state.text.length > 8){
+
+                      let short = this.state.text.substring(0,8);
+
+                      this.setState({
+                          text: short,
+                      });
+                  } else {
+                      this.setState( {text} );
+                  }
               }}
 
               keyboardType='numeric'
@@ -41,7 +50,7 @@ export default class HomeScreen extends React.Component {
           <Barcode
               value={this.state.text}
               onError={() => 0}
-
+              background='#e9e9ee'
         />
       </View>
     );
