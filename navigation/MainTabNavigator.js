@@ -29,6 +29,7 @@ export default TabNavigator(
       screen: Barcode,
     },
   },
+  
   {
     tabBarComponent: TabBarBottom,
     tabBarPosition: 'bottom',
