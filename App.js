@@ -8,11 +8,7 @@ export default class App extends React.Component {
   state = {
     isLoadingComplete: false,
   };
-
-
-
-
-
+  
   render() {
     if (!this.state.isLoadingComplete && !this.props.skipLoadingScreen) {
       return (
